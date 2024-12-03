@@ -1,0 +1,201 @@
+:root{
+    --corFundo: #FFD5F2;
+    --corButton: #DC6CE5;
+    --corbuttonHover: #C321DB;
+    --letraComum: #1D1717;
+    --letraDestaque: #C51180;
+    --cor_fundo: #ff93df62;
+    --corLetras: #1d1717;
+    --corBottom: #c018da;
+    --fundoBTN: #c018da8d;
+    --houverBTN: #c018daf3;
+    --LetraDestaque: #c51180;
+    --LetraContraste: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    background-color: var(--cor_fundo);
+}
+.menu{
+    width: 100%;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    background-color: rgb(243, 194, 245);
+    border-bottom: 2px solid black ;
+}
+.menu h1{
+    margin-left: 10px;
+}
+.agendar{
+    margin-right: 15px;
+    padding: 5px 10px;
+    font-size: 1.7em;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--corButton);
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+.agendar:hover{
+    background-color: var(--corBottom);
+}
+main{
+    padding-top: 90px;
+}
+
+/* ============================ banner destaques xxx' =============================== */
+
+
+.Descaques{
+    padding-top: 90px ;
+    width: 100%;
+    height: 160px;
+    background-color: var(--cor_fundo);
+    margin-bottom: 25px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.Descaques img{
+    width: 100%;
+    height:100%;
+
+}
+
+.sobre{
+    display: flex;
+    width: 100%;
+    margin: 20px auto;
+}
+.sobre .social_midia_buttons {
+    margin:0;
+    padding: 5px;
+    width: 350px;
+}
+.sobreImg img{
+    width: 80%;
+}
+.sobreText{
+    margin-top: 130px;
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20%;
+}
+.sobreText h2{
+    font-size: 2em;
+    margin-bottom: 15px;
+
+}
+.sobreText p{
+    font-size: 1.3em;
+    width: 60%;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+
+.social_midia_buttons{
+    width: 450px;
+}
+.social_midia_buttons a{
+    font-size: 1em;
+    color: var(--corLetras);
+    margin-left: 20px;
+    transition: .3s;
+}
+.social_midia_buttons a:hover{
+    color: pink;
+    font-size: 1.1em;
+}
+
+
+.servico{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2.4em;
+}
+.container {
+    width: 90%;
+    margin: 90px auto;
+    display: flex;
+    gap: 10px;
+}
+
+.box{
+    background-color: rgba(170, 81, 164, 0.555);
+    color: white;
+    padding: 30px 15px;
+    text-align: center;
+    border-radius: 15px;
+    flex: 1;  /* Ajustando as divs para o mesmo tamanho */
+}
+.box p{
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.box img{
+    width: 60%;
+    height: 40%;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+#faleConosco{
+    width: 100%;
+    display: flex;
+    padding: 0.7% 0;
+    background-color: var(--LetraDestaque);
+}
+
+#faleConosco p{
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-left: 2%;  
+
+}
+#faleConosco i{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+    
+}
+
+#faleConosco span a{
+    text-decoration: none;
+    color: #fff;
+
+}
+#faleConosco span a:hover{
+    text-decoration: underline;
+    color: #ffffffc2;
+
+}
+
+#faleConosco .social_midia_buttons a{
+    color: var(--corLetras);
+    transition: .3s;
+}
+#faleConosco .social_midia_buttons a:hover{
+    color: #fff;
+}
+
+.social_midia_buttons {
+    width: 200px;
+}
+#zapFooter{
+    margin-left: 50%;
+}
+#instaFooter{
+    margin-right: 15px;
+}

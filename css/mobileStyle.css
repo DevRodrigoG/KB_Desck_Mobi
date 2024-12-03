@@ -1,0 +1,116 @@
+:root{
+    --corFundo: #FFD5F2;
+    --corButton: #DC6CE5;
+    --corbuttonHover: #C321DB;
+    --letraComum: #1D1717;
+    --letraDestaque: #C51180;
+    --cor_fundo: #ff93df62;
+    --corLetras: #1d1717;
+    --corBottom: #c018da;
+    --fundoBTN: #c018da8d;
+    --houverBTN: #c018daf3;
+    --LetraDestaque: #c51180;
+    --LetraContraste: #fff;
+}
+
+
+/*  =================== MOBILE CSS ================================== */
+
+@media (max-width: 900px) {
+    .agendar{
+        margin-right: px;
+        padding: 5px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    body{
+        width: 100vh;
+    }
+
+    .Descaques{
+        display: none;
+    }
+
+    .sobre{
+        text-align: center;
+        margin: auto;
+        width: 90%;
+        display: block  ;
+    }
+    .sobre img{
+        margin-top: 70px;
+        width: 90%;
+    }
+    .sobreText{
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    .sobreText p{
+        margin: auto;
+        text-align: justify;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .sobre .social_midia_buttons {
+        display: inline;
+        width: 180px;
+    }
+    .sobre .social_midia_buttons i {
+        margin: 10px auto;
+    }
+
+    body{
+        width: 100vh;
+
+    }
+    .container{
+        display: block;
+    }
+    
+    .box{
+        margin: 10px auto ;
+        width: 50%;
+    }
+
+    .box p{
+        font-size: 1em;
+        text-align: justify;
+    }
+    .box img{
+        width: 50%;
+        height: 40%;
+        border-radius: 3px;
+        margin-bottom: 10px;
+    }
+    #faleConosco{
+        width: 100%;
+        background-color: transparent;
+        justify-content: space-between;
+    }
+    #faleConosco span a{
+        color: var(--corButton);
+    
+    }
+    #faleConosco span a:hover{
+        text-decoration: underline;
+        color: var(--corBottom);
+    
+    }
+    #faleConosco p{
+        width: auto ;
+        font-weight: bold;
+        font-size: 12px;
+        margin-top: 2px;
+
+    }
+
+    #faleConosco i{
+        font-size: 10px;
+    }
+
+    #zapFooter{
+        margin-left: 5px;
+    }
+  }

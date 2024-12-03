@@ -39,7 +39,7 @@
     }
     .sobre img{
         margin-top: 70px;
-        width: 90%;
+        width: 80%;
     }
     .sobreText{
         text-align: center;
@@ -48,7 +48,7 @@
     }
     .sobreText p{
         margin: auto;
-        text-align: justify;
+        text-align: unset;
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -101,13 +101,13 @@
     #faleConosco p{
         width: auto ;
         font-weight: bold;
-        font-size: 12px;
+        font-size: 15px;
         margin-top: 2px;
 
     }
 
     #faleConosco i{
-        font-size: 10px;
+        font-size: 15px;
     }
 
     #zapFooter{

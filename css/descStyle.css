@@ -142,7 +142,7 @@ main{
 }
 .box p{
     font-size: 1.1rem;
-    text-align: justify;
+    text-align: unset;
 }
 .box img{
     width: 60%;

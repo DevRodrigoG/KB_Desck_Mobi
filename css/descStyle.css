@@ -50,9 +50,7 @@ body{
 .agendar:hover{
     background-color: var(--corBottom);
 }
-main{
-    padding-top: 90px;
-}
+
 
 /* ============================ banner destaques xxx' =============================== */
 

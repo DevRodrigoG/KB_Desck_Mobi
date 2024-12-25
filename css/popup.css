@@ -35,6 +35,34 @@
     color: rgba(0, 0, 0, 0.534);
 }
 
+.containerServico {
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.containerServico label {
+    font-size: 1.3em;
+}
+.inputServico{
+    text-align: center;
+    margin: 10px auto;
+    font-size: 1.5em;
+    width: 40%;
+    border-radius: 7px;
+}
+.agendarPopap{
+    margin: 10px auto;
+    width: 40%;
+    font-size: 1.5em;
+    border-radius: 7px;
+    background-color: var(--corButton);
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
 
 @media (max-width: 900px) {
 

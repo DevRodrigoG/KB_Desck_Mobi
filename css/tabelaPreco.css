@@ -46,7 +46,7 @@ table .preco {
     font-size: 1.4em;
 }
 .buttonContainer{
-    width: 70%;
+    width: 30%;
     margin: auto;
     margin-top: -50px;
     margin-bottom: 20px;
@@ -66,4 +66,9 @@ table .preco {
 
 #buttonPreco:hover {
     background-color: var(--corBottom);
+}
+@media (max-width: 900px) {
+    .buttonContainer{
+        width: 50%;
+    }
 }

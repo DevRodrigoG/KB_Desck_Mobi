@@ -45,5 +45,15 @@ function validacaoPedido(){
         else{
             alert ("Serviço invalido, verifique o serviço desejado na tabela e tente novamente")
         }
-    }
-    
+}
+
+function enviarDuvida() {
+    let nome = document.getElementById("nomeUsuario").value  // Puxando o valor do input nome do usuario 
+    let pergunta = document.getElementById("perguntaUsuario").value // puxando o valor da pergunta do usuario
+
+    let nomeFormatado = nome.replace(/ /g, "+") /* Formatando o nome do usuario para se o mesmo informe o seu nome completo ou insira algum espaço */
+    let perguntaFormadata = pergunta.replace(/ /g, "+")  /* Formatando a pergunta do usuario para remover todos os espaços colocar o "+" no lugar */
+
+    window.location.href = "https://wa.me/5581986487802/?text=Olá,+meu+nome+é+" + nomeFormatado + ", Duvida: (" + perguntaFormadata + ")"; // Direcionamento para o chat para tirar a duvida 
+
+}

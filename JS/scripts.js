@@ -60,16 +60,18 @@ function validacaoPedido() {
 function enviarDuvida() {
     let nome = document.getElementById("nomeUsuario").value  // Puxando o valor do input nome do usuario 
     let pergunta = document.getElementById("perguntaUsuario").value // puxando o valor da pergunta do usuario
-
+    let validacao = true
     let nomeFormatado = nome.replace(/ /g, "+") /* Formatando o nome do usuario para se o mesmo informe o seu nome completo ou insira algum espaço */
     let perguntaFormadata = pergunta.replace(/ /g, "+")  /* Formatando a pergunta do usuario para remover todos os espaços colocar o "+" no lugar */
 
     if (nomeFormatado == "" || perguntaFormadata == "") { // Validação dos campos Nome e Pergunta para que nenhum campo seja enviado em branco
         alert("Algum dos campos está em branco, peço que preencha corretamente os campos abaixo")
+        validacao = false
     }if (nomeFormatado == "+" || perguntaFormadata == "+"){
         alert("Algum dos campos está em branco, peço que preencha corretamente os campos abaixo")
+        validacao = false
     } 
-    else {
+    else if (validacao == true) {
         window.location.href = "https://wa.me/5581986487802/?text=Olá,+meu+nome+é+" + nomeFormatado + ", Duvida: (" + perguntaFormadata + ")";
     } // Direcionamento para o chat para tirar a duvida 
 

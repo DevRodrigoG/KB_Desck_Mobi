@@ -1,3 +1,6 @@
+
+// Validação de pedido do usuario 
+
 function validacaoPedido() {
 
     //Pedidos daa tabela
@@ -50,7 +53,9 @@ function validacaoPedido() {
     else {
         alert("Serviço invalido, verifique o serviço desejado na tabela e tente novamente")
     }
-} // Validação de pedido do usuario 
+} 
+
+// pergunta do usuario
 
 function enviarDuvida() {
     let nome = document.getElementById("nomeUsuario").value  // Puxando o valor do input nome do usuario 
@@ -59,6 +64,13 @@ function enviarDuvida() {
     let nomeFormatado = nome.replace(/ /g, "+") /* Formatando o nome do usuario para se o mesmo informe o seu nome completo ou insira algum espaço */
     let perguntaFormadata = pergunta.replace(/ /g, "+")  /* Formatando a pergunta do usuario para remover todos os espaços colocar o "+" no lugar */
 
-    window.location.href = "https://wa.me/5581986487802/?text=Olá,+meu+nome+é+" + nomeFormatado + ", Duvida: (" + perguntaFormadata + ")"; // Direcionamento para o chat para tirar a duvida 
+    if (nomeFormatado == "" || perguntaFormadata == "") { // Validação dos campos Nome e Pergunta para que nenhum campo seja enviado em branco
+        alert("Algum dos campos está em branco, peço que preencha corretamente os campos abaixo")
+    }if (nomeFormatado == "+" || perguntaFormadata == "+"){
+        alert("Algum dos campos está em branco, peço que preencha corretamente os campos abaixo")
+    } 
+    else {
+        window.location.href = "https://wa.me/5581986487802/?text=Olá,+meu+nome+é+" + nomeFormatado + ", Duvida: (" + perguntaFormadata + ")";
+    } // Direcionamento para o chat para tirar a duvida 
 
-}  // pergunta do usuario
+}  

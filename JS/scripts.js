@@ -45,7 +45,7 @@ function validacaoPedido(){
         else{
             alert ("Serviço invalido, verifique o serviço desejado na tabela e tente novamente")
         }
-}
+} // Validação de pedido do usuario 
 
 function enviarDuvida() {
     let nome = document.getElementById("nomeUsuario").value  // Puxando o valor do input nome do usuario 
@@ -56,4 +56,4 @@ function enviarDuvida() {
 
     window.location.href = "https://wa.me/5581986487802/?text=Olá,+meu+nome+é+" + nomeFormatado + ", Duvida: (" + perguntaFormadata + ")"; // Direcionamento para o chat para tirar a duvida 
 
-}
+}  // pergunta do usuario
